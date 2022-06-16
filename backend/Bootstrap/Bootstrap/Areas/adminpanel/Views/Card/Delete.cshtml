@@ -1,0 +1,37 @@
+﻿@model Card
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="table-responsive pt-3">
+    <form method="post">
+        <table class="table table-dark mt-2">
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Image
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @Model.Id
+                    </td>
+                    <td>
+                        <img class="img-fluid" src="~/assets/image/@Model.Image" style="width:200px; height:100px;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <button type="submit" class="btn btn-danger">Delete Card</button>
+        </div>
+    </form>
+</div>
+
+

@@ -1,0 +1,40 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="dropdown-menu" style="text-align:center; padding:60px;">
+    <form class="px-4 py-3" method="post">
+        <div class="mb-3">
+            <label for="exampleDropdownFirstName1" class="form-label">First Name</label>
+            <input  asp-for="FirstName" class="form-control" id="exampleDropdownFormFirstName1" placeholder="First Name">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleDropdownLastName1" class="form-label">Last Name</label>
+            <input asp-for="LastName" class="form-control" id="exampleDropdownFormLastName1" placeholder="Last Name">
+            <span asp-validation-for="LastName" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+            <input asp-for="EmailAddress" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            <span asp-validation-for="EmailAddress" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+            <input asp-for="Password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+        </div>
+         <div class="mb-3">
+            <label for="exampleDropdownFormConfirmPassword1" class="form-label">Confirm Password</label>
+            <input asp-for="ConfirmPassword" class="form-control" id="exampleDropdownFormConfirmPassword1" placeholder="Confirm Password">
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+</div>
+

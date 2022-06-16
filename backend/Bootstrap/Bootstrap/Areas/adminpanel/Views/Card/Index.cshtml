@@ -1,0 +1,45 @@
+﻿@model HomeVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="table-responsive pt-3">
+    <a class="btn btn-success" asp-controller="Card" asp-action="Create">Create Card</a>
+    <table class="table table-dark mt-2">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Settings
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Card item in Model.cards)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        <img class="img-fluid" src="~/assets/image/@item.Image" style="width:200px; height:100px;">
+                    </td>
+                    <td>
+                        <a class="btn btn-warning" asp-controller="Card" asp-action="Detiel" asp-route-Id="@item.Id">Detiel</a>
+                        <a class="btn btn-info" asp-controller="Card" asp-action="Edit" asp-route-Id="@item.Id">Edit</a>
+                        <a class="btn btn-danger" asp-controller="Card" asp-action="Delete" asp-route-Id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>

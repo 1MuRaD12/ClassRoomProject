@@ -1,0 +1,134 @@
+﻿@model HomeVM
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<main>
+    <section class="section1">
+        <div class="container">
+            @foreach (Caption item in Model.captions)
+            {
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="@item.Image"
+                         alt="">
+                    </div>
+                    <div>
+                        <ul style="list-style:none ;">
+                            <li class="mt-5"><strong>@item.Title</strong></li>
+                            <li class="mt-3"><i class="@item.Icon"></i></li>
+                            <li>
+                                <p>@item.SubTitle</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+    <section class="section2 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul>
+                        <li><strong>PORTFOLIO</strong></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                @foreach (Card item in Model.cards)
+                {
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false"
+                                     data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 448 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                          d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z">
+                                        </path>
+                                    </svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="../assets/image/@item.Image" alt="...">
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </section>
+
+    <section class="section3 mt-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul>
+                        <li><strong>ABOUT</strong></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+            </div>
+            @foreach (About item in Model.abouts)
+            {
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="p1">
+                            @item.Title1
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="p2">
+                            @item.Title2
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <button class="button">
+                            <p><i class="@item.Icon"></i> @item.Button</p>
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+    <section id="contacts" class="py-5">
+        <div class="container">
+            <div class="aboutContact text-center">
+                <strong>Content</strong>
+                <div class="start d-flex justify-content-between">
+                    <div class="line">
+                    </div>
+                    <i class="fa-solid fa-star mt-1"></i>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="contactMe w-50 mt-4">
+
+                <form class="row">
+
+                    <input type="text" placeholder="Full name" class="">
+                    <br>
+                    <input type="text" placeholder="Email address" class="">
+                    <br>
+                    <input type="text" placeholder="Phone number" class="">
+                    <br>
+                    <textarea name="" id="" cols="100" rows="5" placeholder="Message"
+                              style="border: none; border-bottom: 1px solid gray;"></textarea>
+                </form>
+
+                <button type="button" class="btn btn-secondary mt-3">Send</button>
+            </div>
+        </div>
+    </section>
+
+</main>

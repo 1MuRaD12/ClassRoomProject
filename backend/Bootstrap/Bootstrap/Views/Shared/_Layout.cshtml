@@ -1,0 +1,101 @@
+﻿@inject Bootstrap.services.LayoutService layout
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="~/assets/scss/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-6 mt-3">
+                        <a href="#">
+                            <strong>
+                                START BOOTSTRAP
+                            </strong>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><a href="#"><strong>PORTFOLIO</strong></a></li>
+                            <li><a href="#"><strong>ABOUT</strong></a></li>
+                            <li><a href="#"><strong>CONTACT</strong></a></li>
+                            <li><a asp-controller="Account" asp-action="Register"><strong>REGISTRATION</strong></a></li>
+                            <li><a href="#"><strong>LOGIN</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    @RenderBody()
+    <footer>
+        <section class="footer1">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <strong>LOCATION</strong>
+                        <p>
+                            2215 John Daniel Drive
+                            Clark, MO 65243
+                        </p>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div><strong>AROUND THE WEB</strong></div>
+                        <div class="icon mt-3">
+                            <div class="iconi">
+                                <i class="@layout.GetSetting().Result.FirstOrDefault(u=>u.Key == "Facebook").Value i"></i>
+                            </div>
+                            <div class="iconi">
+                                <i class="@layout.GetSetting().Result.FirstOrDefault(u=>u.Key == "Twitter").Value i"></i>
+                            </div>
+                            <div class="iconi">
+                                <i class="@layout.GetSetting().Result.FirstOrDefault(u=>u.Key == "Linkedin").Value i"></i>
+                            </div>
+                            <div class="iconi">
+                                <i class="@layout.GetSetting().Result.FirstOrDefault(u=>u.Key == "Basket").Value i"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <strong>ABOUT FREELANCER</strong>
+                        <p>
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#"
+                                                                                                   style="color: #1abc9c;">
+                                Start Bootstrap
+                            </a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright © Your Website 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="~/assets/Bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

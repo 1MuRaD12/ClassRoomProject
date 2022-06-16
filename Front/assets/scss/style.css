@@ -1,0 +1,266 @@
+header {
+  background-color: #2c3e50;
+  padding: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+header nav .container .row .col-lg-6 a {
+  text-decoration: none;
+}
+
+header nav .container .row .col-lg-6 a strong {
+  color: white;
+  font-size: 25px;
+}
+
+header nav .container .row .col-lg-6 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+header nav .container .row .col-lg-6 ul li {
+  list-style: none;
+}
+
+header nav .container .row .col-lg-6 ul li a {
+  color: white;
+}
+
+header nav .container .row .col-lg-6 ul li a strong {
+  font-size: 20px;
+}
+
+main .section1 {
+  background-color: #1abc9c;
+}
+
+main .section1 .container {
+  text-align: center;
+  padding: 80px;
+}
+
+main .section1 .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section1 .container .row img {
+  width: 18%;
+}
+
+main .section1 .container .row ul {
+  line-height: 30px;
+  color: white;
+}
+
+main .section1 .container .row ul li {
+  margin-right: 20px;
+}
+
+main .section1 .container .row ul li strong {
+  font-size: 70px;
+}
+
+main .section1 .container .row ul li p {
+  font-size: 30px;
+}
+
+main .section1 .container .row ul li i {
+  font-size: 35px;
+}
+
+main .section2 .container .row .col-lg-12 ul {
+  margin-right: 20px;
+  line-height: 75px;
+  list-style: none;
+  text-align: center;
+}
+
+main .section2 .container .row .col-lg-12 ul strong {
+  font-size: 45px;
+}
+
+main .section2 .container .row .col-lg-12 ul i {
+  font-size: 35px;
+}
+
+main .section2 .container .row .col-lg-4 img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  border-radius: 10px;
+}
+
+main .section3 {
+  padding: 100px;
+  background-color: #1abc9c;
+}
+
+main .section3 .container .row .col-lg-12 ul {
+  color: white;
+  margin-right: 20px;
+  text-align: center;
+  list-style: none;
+}
+
+main .section3 .container .row .col-lg-12 ul li {
+  line-height: 60px;
+}
+
+main .section3 .container .row .col-lg-12 ul li strong {
+  font-size: 50px;
+}
+
+main .section3 .container .row .col-lg-12 ul li i {
+  font-size: 35px;
+}
+
+main .section3 .container .row .col-lg-6 {
+  color: white;
+}
+
+main .section3 .container .row .col-lg-6 .p1 {
+  font-size: 25px;
+  text-align: end;
+}
+
+main .section3 .container .row .col-lg-6 .p2 {
+  font-size: 25px;
+  text-align: start;
+}
+
+main .section3 .container .row button {
+  cursor: pointer;
+  width: 20%;
+  padding: 0px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #1abc9c;
+}
+
+main .section3 .container .row button p {
+  color: white;
+  font-size: 20px;
+}
+
+main .section3 .container .row .button:hover {
+  background-color: white;
+}
+
+main .section3 .container .row .button:hover p {
+  color: black;
+}
+
+main #contacts .container .aboutContact {
+  width: 50%;
+  margin: 0px auto;
+}
+
+main #contacts .container .aboutContact strong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  color: #2c3e50;
+}
+
+main #contacts .container .aboutContact i {
+  font-size: 35px;
+}
+
+main #contacts .container .stars {
+  margin: 0px auto;
+}
+
+main #contacts .container .stars .line {
+  width: 40%;
+  height: 3px;
+  background-color: #2c3e50;
+  margin-top: 10px;
+}
+
+main #contacts .container .stars i {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+main #contacts .container .contactMe {
+  margin: 0px auto;
+}
+
+main #contacts .container .contactMe input {
+  height: 75px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+footer .footer1 {
+  background-color: #2c3e50;
+  color: white;
+}
+
+footer .footer1 .container {
+  padding: 50px;
+}
+
+footer .footer1 .container .row .col-lg-4 {
+  text-align: center;
+}
+
+footer .footer1 .container .row .col-lg-4 strong {
+  font-size: 28px;
+}
+
+footer .footer1 .container .row .col-lg-4 p {
+  font-size: 22px;
+}
+
+footer .footer1 .container .row .col-lg-4 .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+footer .footer1 .container .row .col-lg-4 .icon .iconi {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+footer .footer1 .container .row .col-lg-4 .icon .iconi .i {
+  font-size: 25px;
+}
+
+footer .footer1 .container .row .col-lg-4 .icon .iconi:hover {
+  background-color: white;
+}
+
+footer .footer1 .container .row .col-lg-4 .icon .iconi:hover i {
+  color: black;
+}
+
+footer .footer2 {
+  background-color: #1a252f;
+  padding: 20px;
+}
+
+footer .footer2 .container .row .col-lg-12 {
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
